@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<title>Simple Code Tokenizer</title>
+<style type="text/css">
+
+.div1 {
+    text-align: center;
+    background-color: #ccc;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+} 
+.linenumber { background-color: rgb(0,100,200); }
+.lineindex_color { color: rgb(255,255,255); background-color: #000000; }
+.linetype { color: rgb(100,0,255); background-color: rgb(25,255,100); }
+.linenum { color: rgb(50,255,50); background-color: #888888; }
+.codetext { color: #000000; background-color: rgb(255,254,208);}
+.codekeyword { color: rgb(0,0,255); font-weight: bold; }
+.codestring { color: rgb(255,0,255);background-color: rgb(200, 200,200); }
+.codesymbol { color: rgb(76,255,198); background-color: rgb(100,100,100); }
+.codedigit { color: rgb(0,255,186); background-color: rgb(0,0,0); }
+.codechar { color: rgb(187,212,249); background-color: rgb(94,0,167); }
+</style>
+</head>
+<body>
+<div class="div1">
+    <h1>Simple Code Tokenizer</h1>
+<textarea rows="30" cols="80" id="text1">
+</textarea><br>
+<input type="button" value="Lex" onclick="Lex()" />
+</div>
+<div id="div2" class="div2">
+</div>
+</body>
+<script src="lex.js"></script>
+<script src="scanlex.js"></script>
+</html>
